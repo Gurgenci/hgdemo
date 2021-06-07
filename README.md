@@ -179,10 +179,23 @@ The second module has two functions: `area`, `side` and it imports `numpy`.
 .. automodule:: hgdemo.square
     :members:
 ```
-
+* ./make html
 #### Add it to the github: ####
 * `git add -A`
 * `git commit -am ` 'the secod module: square'
 * `git push origin main`
 * Refresh the `Overview` in `ReadtheDocs` project `hgdemo`
-* Build Documentation
+* Build Version
+  * (even when I refresh, ReadtheDocs sometimes fails to reead the new the project and the Billd fails.  I then reset and wipe and latest and start again.  This usually works.)
+
+`ReadTheDocs` did not process `square.py` .  The build notes says:
+```
+WARNING: autodoc: failed to import module 'square' from module 'hgdemo'; the following exception was raised:
+No module named 'numpy'
+```
+Unfortunately, the `requests` does not seem to be accessing `numpy`. 
+
+### Trial and Error to include `numpy` ###
+
+#### `requirements.txt` ####
+I add the following file to `docs` folder:
