@@ -6,8 +6,8 @@
 
 import numpy as np
 
-def area(r):
-    """Returns the area of the square with the side 'r'
+def sqarea(r):
+    """ Returns the area of the square with the side 'r'
 
     Args:
         r (float): square side
@@ -16,7 +16,7 @@ def area(r):
     return A
 
 def side(A):
-    """Returns the side of the square with the area 'A''
+    """ Returns the side of the square with the area 'A''
 
     Args:
         A (float): square area

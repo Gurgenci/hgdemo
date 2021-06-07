@@ -199,3 +199,9 @@ Unfortunately, the `requests` does not seem to be accessing `numpy`.
 
 #### `requirements.txt` ####
 I add the following file to `docs` folder:
+```
+  numpy>=1.0
+```
+This made it possible to import `square`.  But there were problems in the documentation.
+
+Rename `area` in `square` to `sqarea` and repeat `./make html`.
