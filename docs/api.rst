@@ -7,3 +7,6 @@ This is a short API file demonstrating the bare essentials.
 
 .. automodule:: hgdemo.circle
     :members:
+
+.. automodule:: hgdemo.square
+    :members:

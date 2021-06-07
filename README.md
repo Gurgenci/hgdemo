@@ -161,6 +161,28 @@ The docs/_build/html/api.html and docs/_build/html/index.html files are generate
   * .ipynb_checkpoints
 * `git add -A`
 * `git commit -am `'the first commit'
-* log in to gith`ub
+* log in to github
+* Create `hgdemo` as an empty repository
+* `git remote add origin` https://github.com/Gurgenci/hgdemo.git
+* `git branch -M main`
 * `git push origin main`
+* Log in to `ReadtheDocs.org`
+* Import a repository (hgdemo)
 
+The documentation is created: http://hgdemo.readthedocs.io/ 
+
+### Create a second module, `square`. ###
+The second module has two functions: `area`, `side` and it imports `numpy`.
+#### Add it to the local `git` ####
+* Add the following two lines to the end of `api.rst`:
+```  * 
+.. automodule:: hgdemo.square
+    :members:
+```
+
+#### Add it to the github: ####
+* `git add -A`
+* `git commit -am ` 'the secod module: square'
+* `git push origin main`
+* Refresh the `Overview` in `ReadtheDocs` project `hgdemo`
+* Build Documentation
